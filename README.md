@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/cmcrawford2/calculator)
-- Live Site URL: [Add live site URL here](https://cris_crawfords_calculator.netlify.app)
+- Solution URL: [Github](https://github.com/cmcrawford2/calculator)
+- Live Site URL: [Netlify](https://cris-crawfords-calculator.netlify.app)
 
 ## My process
 
