@@ -54,6 +54,10 @@ document.addEventListener("DOMContentLoaded", function () {
           operation = "";
           display.value = "0";
           display.textContent = String(operand);
+        } else {
+          // Clear out the current value, but keep it as operand.
+          operand = Number(display.value);
+          display.value = "0";
         }
         break;
       case "1":
@@ -125,6 +129,11 @@ document.addEventListener("DOMContentLoaded", function () {
           }
           // Update the display
           display.textContent = display.value;
+          // Update the operand = even if it's not set.
+          // If it's set, we need to keep it in sync.
+          // If it's not set, it doesn't matter.
+          // It will be set to the same value when user chooses an operation.
+          operand = Number(display.value);
         } else if (operand !== 0 && operand != NaN && operand != Infinity) {
           // We are deleting last digit of a result
           const oldString = String(operand);
@@ -158,7 +167,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function operator(text) {
-    return text === "+" || text === "-" || text === "x" || text === "/";
+    return (
+      text === "+" ||
+      text === "-" ||
+      text === "x" ||
+      text === "/" ||
+      text === "="
+    );
   }
 
   function calculate_number(a, b, operation) {

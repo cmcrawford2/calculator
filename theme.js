@@ -41,13 +41,18 @@ const slider = document.getElementById("theme-slider");
 slider.addEventListener("input", () => {
   const themeNumber = Number(slider.value);
   switchTheme(themeNumber);
+  // Save the value in local storage.
+  localStorage.setItem("themeValue", slider.value);
 });
 
 // Add an event listener to execute when the DOM is fully loaded
 // We're doing this because reset causes the first theme to load in css.
 document.addEventListener("DOMContentLoaded", function () {
+  // Retrieve the stored value from local storage
+  const storedThemeValue = localStorage.getItem("themeValue");
+  if (storedThemeValue !== null) slider.value = storedThemeValue;
   // Set the value to 1 to represent theme 1
-  slider.value = 1;
+  else slider.value = 1;
 
   // Trigger the input event to apply the theme immediately
   slider.dispatchEvent(new Event("input"));
