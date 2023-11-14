@@ -17,31 +17,20 @@ document.addEventListener("DOMContentLoaded", function () {
   display.value = "0";
 
   function handleButtonClick(buttonText) {
-    console.log(
-      "BEFORE: buttonText, operand, operation, display.value, display.textContent",
-      buttonText,
-      operand,
-      operation,
-      display.value,
-      display.textContent
-    );
     switch (buttonText) {
       case "+":
       case "-":
       case "/":
       case "x":
-        console.log("operator");
         if (operator(previousText)) {
           // Just overwrite
           operation = buttonText;
         } else if (operation === "") {
-          console.log("No operation");
           operation = buttonText;
           operand = Number(display.value);
           display.value = "0";
           // Do not update textContent until the user types the next number.
         } else {
-          console.log("operation exists");
           operand = calculate_number(operand, Number(display.value), operation);
           operation = buttonText;
           display.value = "0";
@@ -114,7 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         break;
       case "DEL":
-        console.log("deleting", display.textContent, "operand", operand);
         if (
           display.value !== "0" &&
           display.textContent !== "NaN" &&
@@ -158,12 +146,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     // We do this to check if user types two operands in a row.
     previousText = buttonText;
-    console.log(
-      "AFTER: operand, display.value, display.textContent",
-      operand,
-      display.value,
-      display.textContent
-    );
   }
 
   function operator(text) {
