@@ -4,23 +4,32 @@ function switchTheme(themeNumber) {
   const root = document.querySelector(":root");
 
   if (themeNumber === 1) {
-    root.style.setProperty("--primary-bg-color", "#3d4662");
-    root.style.setProperty("--output-bg-color", "#132d33");
-    root.style.setProperty("--calculator-bg-color", "#1e2d33");
+    root.style.setProperty("--primary-bg-color", "hsl(222, 26%, 31%)");
+    root.style.setProperty("--output-bg-color", "hsl(224, 36%, 15%)");
+    root.style.setProperty("--calculator-bg-color", "hsl(223, 31%, 20%)");
     root.style.setProperty("--text-color", "#ffffff");
+    root.style.setProperty("--dark-text-color", "hsl(221, 14%, 31%)");
     root.style.setProperty("--button-color", "hsl(30, 25%, 89%)");
-    root.style.setProperty("--reset-button-color", "#3c5264");
-    root.style.setProperty("--equals-button-color", "#32cd32");
-    root.style.setProperty("--button-text-color", "#ffffff");
-    root.style.setProperty("--attribution-link-color", "#87cefa");
+    root.style.setProperty("--button-shadow", "hsl(28, 16%, 65%)");
+    root.style.setProperty("--reset-button-color", "hsl(225, 21%, 49%)");
+    root.style.setProperty("--reset-button-shadow", "hsl(224, 28%, 35%)");
+    root.style.setProperty("--equals-button-color", "hsl(6, 63%, 50%)");
+    root.style.setProperty("--equals-button-shadow", "hsl(6, 70%, 34%)");
+    root.style.setProperty("--button-text-color", "hsl(0, 0%, 100%");
+    root.style.setProperty("--attribution-color", "#f5f5f5");
+    root.style.setProperty("--attribution-link-color", "turquoise");
   } else if (themeNumber === 2) {
-    root.style.setProperty("--primary-bg-color", "#f2f2f2");
+    root.style.setProperty("--primary-bg-color", "hsl(0, 0%, 90%");
     root.style.setProperty("--output-bg-color", "hsl(0, 0%, 93%)");
     root.style.setProperty("--calculator-bg-color", "hsl(0, 5%, 81%)");
     root.style.setProperty("--text-color", "hsl(60, 10%, 19%)");
+    root.style.setProperty("--dark-text-color", "hsl(60, 10%, 19%)");
     root.style.setProperty("--button-color", "hsl(45, 7%, 89%)");
+    root.style.setProperty("--button-shadow", "hsl(35, 11%, 61%)");
     root.style.setProperty("--reset-button-color", "hsl(185, 42%, 37%)");
+    root.style.setProperty("--reset-button-shadow", "hsl(185, 58%, 25%)");
     root.style.setProperty("--equals-button-color", "hsl(25, 98%, 40%)");
+    root.style.setProperty("--equals-button-shadow", "hsl(25, 99%, 27%)");
     root.style.setProperty("--button-text-color", "hsl(0, 0%, 100%)");
     root.style.setProperty("--attribution-link-color", "hsl(185, 42%, 37%)");
   } else if (themeNumber === 3) {
@@ -28,9 +37,13 @@ function switchTheme(themeNumber) {
     root.style.setProperty("--output-bg-color", "#afdefe");
     root.style.setProperty("--calculator-bg-color", "#37ccf9");
     root.style.setProperty("--text-color", "#0a0a0a");
+    root.style.setProperty("--dark-text-color", "#0a0a0a");
     root.style.setProperty("--button-color", "#ffddff");
+    root.style.setProperty("--button-shadow", "#eeaaee");
     root.style.setProperty("--reset-button-color", "#59127a");
+    root.style.setProperty("--reset-button-shadow", "#301050");
     root.style.setProperty("--equals-button-color", "#ff9ff0");
+    root.style.setProperty("--equals-button-shadow", "#f090e0");
     root.style.setProperty("--button-text-color", "#ffffff");
     root.style.setProperty("--attribution-link-color", "#ffddff");
   }
