@@ -13,8 +13,10 @@ function switchTheme(themeNumber) {
     root.style.setProperty("--button-shadow", "hsl(28, 16%, 65%)");
     root.style.setProperty("--reset-button-color", "hsl(225, 21%, 49%)");
     root.style.setProperty("--reset-button-shadow", "hsl(224, 28%, 35%)");
+    root.style.setProperty("--reset-button-hover", "hsl(225, 51%, 76%)");
     root.style.setProperty("--equals-button-color", "hsl(6, 63%, 50%)");
     root.style.setProperty("--equals-button-shadow", "hsl(6, 70%, 34%)");
+    root.style.setProperty("--equals-button-hover", "hsl(6, 93%, 76%)");
     root.style.setProperty("--button-text-color", "hsl(0, 0%, 100%");
     root.style.setProperty("--attribution-color", "#f5f5f5");
     root.style.setProperty("--attribution-link-color", "turquoise");
@@ -28,8 +30,10 @@ function switchTheme(themeNumber) {
     root.style.setProperty("--button-shadow", "hsl(35, 11%, 61%)");
     root.style.setProperty("--reset-button-color", "hsl(185, 42%, 37%)");
     root.style.setProperty("--reset-button-shadow", "hsl(185, 58%, 25%)");
+    root.style.setProperty("--reset-button-hover", "hsl(185, 40%, 56%)");
     root.style.setProperty("--equals-button-color", "hsl(25, 98%, 40%)");
     root.style.setProperty("--equals-button-shadow", "hsl(25, 99%, 27%)");
+    root.style.setProperty("--equals-button-hover", "hsl(25, 100%, 61%)");
     root.style.setProperty("--button-text-color", "hsl(0, 0%, 100%)");
     root.style.setProperty("--attribution-link-color", "hsl(185, 42%, 37%)");
   } else if (themeNumber === 3) {
@@ -42,8 +46,10 @@ function switchTheme(themeNumber) {
     root.style.setProperty("--button-shadow", "#eeaaee");
     root.style.setProperty("--reset-button-color", "#59127a");
     root.style.setProperty("--reset-button-shadow", "#301050");
+    root.style.setProperty("--reset-button-hover", "#69226a");
     root.style.setProperty("--equals-button-color", "#ff9ff0");
     root.style.setProperty("--equals-button-shadow", "#f090e0");
+    root.style.setProperty("--equals-button-hover", "#ffafff");
     root.style.setProperty("--button-text-color", "#ffffff");
     root.style.setProperty("--attribution-link-color", "#ffddff");
   }
