@@ -18,8 +18,6 @@ function switchTheme(themeNumber) {
     root.style.setProperty("--equals-button-shadow", "hsl(6, 70%, 34%)");
     root.style.setProperty("--equals-button-hover", "hsl(6, 93%, 76%)");
     root.style.setProperty("--button-text-color", "hsl(0, 0%, 100%");
-    root.style.setProperty("--attribution-color", "#f5f5f5");
-    root.style.setProperty("--attribution-link-color", "turquoise");
   } else if (themeNumber === 2) {
     root.style.setProperty("--primary-bg-color", "hsl(0, 0%, 90%");
     root.style.setProperty("--output-bg-color", "hsl(0, 0%, 93%)");
@@ -35,7 +33,6 @@ function switchTheme(themeNumber) {
     root.style.setProperty("--equals-button-shadow", "hsl(25, 99%, 27%)");
     root.style.setProperty("--equals-button-hover", "hsl(25, 100%, 61%)");
     root.style.setProperty("--button-text-color", "hsl(0, 0%, 100%)");
-    root.style.setProperty("--attribution-link-color", "hsl(185, 42%, 37%)");
   } else if (themeNumber === 3) {
     root.style.setProperty("--primary-bg-color", "#f067c1");
     root.style.setProperty("--output-bg-color", "#afdefe");
@@ -51,7 +48,6 @@ function switchTheme(themeNumber) {
     root.style.setProperty("--equals-button-shadow", "#f090e0");
     root.style.setProperty("--equals-button-hover", "#ffafff");
     root.style.setProperty("--button-text-color", "#ffffff");
-    root.style.setProperty("--attribution-link-color", "#ffddff");
   }
 }
 

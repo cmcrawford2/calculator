@@ -13,8 +13,6 @@
   --equals-button-shadow: hsl(6, 70%, 34%);
   --equals-button-hover: hsl(6, 93%, 76%);
   --button-text-color: #ffffff;
-  --attribution-color: #f5f5f5;
-  --attribution-link-color: turquoise;
 }
 
 * {
@@ -148,22 +146,6 @@ header {
   background-color: var(--output-bg-color);
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    width: 540px;
-  }
-  header {
-    margin-top: 98px;
-  }
-  #output {
-    height: 128px;
-    padding: 24px;
-    font-size: 56px;
-    line-height: 56px;
-    padding: 40px 32px 32px;
-  }
-}
-
 .calculator {
   display: grid;
   grid-template-rows: repeat(5, 1fr);
@@ -172,6 +154,7 @@ header {
   width: 100%;
   padding: 24px;
   margin-top: 24px;
+  margin-bottom: 36px;
   border-radius: 10px;
   background-color: var(--calculator-bg-color);
 }
@@ -231,9 +214,23 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    width: 540px;
+  }
+  header {
+    margin-top: 96px;
+  }
+  #output {
+    height: 128px;
+    padding: 24px;
+    font-size: 56px;
+    line-height: 56px;
+    padding: 40px 32px 32px;
+  }
   .calculator {
     padding: 32px;
     gap: 24px;
+    margin-bottom: 96px;
   }
   .calculator button {
     font-size: 40px;
@@ -243,14 +240,4 @@ header {
   #reset-button {
     font-size: 28px;
   }
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  color: var(--text-color);
-}
-
-.attribution a {
-  color: var(--attribution-link-color);
 }
