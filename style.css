@@ -164,8 +164,8 @@ header {
   font-size: 32px;
   line-height: 32px;
   height: 64px;
-  text-align: center;
   padding-top: 4px;
+  padding-inline: 0;
   color: var(--dark-text-color);
   background-color: var(--button-color);
   border: none;
