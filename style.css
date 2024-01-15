@@ -27,10 +27,11 @@ body {
   justify-content: flex-start;
   align-items: center;
   width: 327px;
-  margin-inline: auto;
+  padding: 0;
+  margin: 0 auto;
 }
 
-body p,
+p,
 h1,
 h2,
 h3,
@@ -50,7 +51,7 @@ header {
 
 .logo {
   font-size: 32px;
-  line-height: auto;
+  line-height: 29px;
   font-weight: bold;
   letter-spacing: -0.53px;
 }
@@ -59,16 +60,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  height: 42px;
   width: 146px;
 }
 
 .input-theme {
-  margin-left: 1px;
   font-size: 12px;
-  line-height: auto;
+  line-height: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 }
 
 .numbers-and-slider {
@@ -80,6 +81,7 @@ header {
   display: flex;
   flex-direction: row;
   font-size: 12px;
+  line-height: 12px;
   justify-content: space-between;
   padding-inline: 4px;
 }
@@ -94,7 +96,7 @@ header {
   height: 26px;
   border-radius: 13px;
   background-color: var(--calculator-bg-color);
-  padding-inline: 5px;
+  padding: 0 5px;
   -webkit-appearance: none;
   appearance: none;
 }
@@ -165,7 +167,6 @@ header {
   line-height: 32px;
   height: 64px;
   padding-top: 4px;
-  padding-inline: 0;
   color: var(--dark-text-color);
   background-color: var(--button-color);
   border: none;
@@ -220,9 +221,11 @@ header {
   header {
     margin-top: 96px;
   }
+  .input-wrapper {
+    height: 44px;
+  }
   #output {
     height: 128px;
-    padding: 24px;
     font-size: 56px;
     line-height: 56px;
     padding: 40px 32px 32px;
